@@ -9,7 +9,7 @@ My project will use the MAKEUP API where users can search for different cosmetic
 
 ## Wireframes
 
-https://imgur.com/YyZtzHW
+![](https://i.imgur.com/ZaT0cAY.jpg)
 
 ### MVP/PostMVP - 5min
 
