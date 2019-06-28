@@ -6,7 +6,7 @@ const api = axios.create({
   baseURL: URL,
 });
 
-export const fetchData = async () => {
+export const fetchBrand = async () => {
   const resp = await api.get('brand=maybelline')
   return resp.data;
 }

@@ -1,5 +1,7 @@
 # Project Overview
 
+![](https://media.giphy.com/media/dUNDgPyejsozFkrUeB/giphy.gif)
+
 
 ## Project Description
 My project will use the MAKEUP API where users can search for different cosmetics items and can look up information such as brand,different colors, tags such as vegan and non-gmo  
