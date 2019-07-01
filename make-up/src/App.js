@@ -17,7 +17,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      makeUpItem: []
+      makeUpItem: null
     }
   }
 
@@ -32,7 +32,6 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-
         <main>
           <Route
             path="/blush"
@@ -59,7 +58,7 @@ class App extends React.Component {
             path="/mascara"
             render={() => < Mascara setCurrentItem={this.setCurrentItem} />} />
           <Route
-            path="/makupitem/:id"
+            path="/makeupitem/:id"
             render={() => < MakeupInfo makeUpItem={this.state.makeUpItem} />} />
 
         </main>

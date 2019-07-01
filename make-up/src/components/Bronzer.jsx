@@ -25,7 +25,7 @@ class Bronzer extends React.Component {
             <div key={bronzer.id} id="bronzer" onClick={() => {
               this.props.setCurrentItem(bronzer);
               this.props.history.push(`/makeupitem/${bronzer.id}`)
-            }}>>
+            }}>
               <img src={bronzer.api_featured_image} />
               <h3>{bronzer.name}</h3>
             </div>
