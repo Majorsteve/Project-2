@@ -1,5 +1,6 @@
 import React from 'react';
 import { fetchEyebrow } from '../services/makeup';
+import { withRouter } from 'react-router-dom';
 
 class Eyebrow extends React.Component {
   constructor() {
@@ -21,7 +22,10 @@ class Eyebrow extends React.Component {
       <div id="eyebrow-list">
         {
           this.state.eyebrow.map((eyebrow) => (
-            <div key={eyebrow.id} id="eyebrow">
+            <div key={eyebrow.id} id="eyebrow"onClick={() => {
+              this.props.setCurrentItem(eyebrow);
+              this.props.history.push(`/makeupitem/${eyebrow.id}`)
+            }}>>
               <img src={eyebrow.api_featured_image} />
               <h3>{eyebrow.name}</h3>
             </div>
@@ -32,4 +36,4 @@ class Eyebrow extends React.Component {
   }
 }
 
-export default Eyebrow;
+export default withRouter(Eyebrow);

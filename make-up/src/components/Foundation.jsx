@@ -1,5 +1,6 @@
 import React from 'react';
 import { fetchFoundation } from '../services/makeup';
+import { withRouter } from 'react-router-dom';
 
 class Foundation extends React.Component {
   constructor() {
@@ -22,7 +23,10 @@ class Foundation extends React.Component {
       <div id="foundation-list">
       {
           this.state.foundation.map((foundation) => (
-            <div key={foundation.id} id="foundation">
+            <div key={foundation.id} id="foundation" onClick={() => {
+              this.props.setCurrentItem(foundation);
+              this.props.history.push(`/makeupitem/${foundation.id}`)
+            }}>
               <img src={foundation.api_featured_image} />
               <h3>{foundation.name}</h3>
             </div>
@@ -34,4 +38,4 @@ class Foundation extends React.Component {
 
 }
 
-export default Foundation;
+export default withRouter(Foundation);

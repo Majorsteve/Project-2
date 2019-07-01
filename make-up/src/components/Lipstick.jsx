@@ -1,5 +1,6 @@
 import React from 'react';
 import { fetchLipstick } from '../services/makeup';
+import { withRouter } from 'react-router-dom';
 
 class Lipstick extends React.Component {
   constructor() {
@@ -21,7 +22,10 @@ class Lipstick extends React.Component {
       <div id="lipstick-list">
         {
           this.state.lipstick.map((lipstick) => (
-            <div key={lipstick.id} id="lipstick">
+            <div key={lipstick.id} id="lipstick" onClick={() => {
+              this.props.setCurrentItem(lipstick);
+              this.props.history.push(`/makeupitem/${lipstick.id}`)
+            }}>>
               <img src={lipstick.api_featured_image} />
               <h3>{lipstick.name}</h3>
             </div>
@@ -33,6 +37,6 @@ class Lipstick extends React.Component {
 
 }
 
-export default Lipstick;
+export default withRouter(Lipstick);
 
 

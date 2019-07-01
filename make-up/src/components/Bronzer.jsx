@@ -1,5 +1,6 @@
 import React from 'react';
 import { fetchBronzer } from '../services/makeup';
+import { withRouter } from 'react-router-dom'; 
 
 class Bronzer extends React.Component {
   constructor() {
@@ -37,4 +38,4 @@ class Bronzer extends React.Component {
 
 }
 
-export default Bronzer;
+export default withRouter(Bronzer);
