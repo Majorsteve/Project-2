@@ -21,7 +21,7 @@ class Eyeshadow extends React.Component {
     console.log(this.state.eyeshadow);
 
     return (
-      <div id="eyeshadow-list">
+      <div id="list">
         {
           this.state.eyeshadow.map((eyeshadow) => (
             <div key={eyeshadow.id} id="eyeshadow" onClick={() => {

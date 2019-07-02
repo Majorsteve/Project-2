@@ -21,7 +21,7 @@ class Blush extends React.Component {
     console.log(this.state.blush);
 
     return (
-      <div id="blush-list">
+      <div id= "list">
         {
           this.state.blush.map((blush) => (
             <div key={blush.id} id="blush" onClick={() => {

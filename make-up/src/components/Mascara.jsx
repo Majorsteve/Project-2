@@ -19,7 +19,7 @@ class Mascara extends React.Component{
 
   render() {
     return (
-      <div id="mascara-list">
+      <div id="list">
         {
           this.state.mascara.map((mascara) => (
             <div key={mascara.id} id="mascara" onClick={() => {

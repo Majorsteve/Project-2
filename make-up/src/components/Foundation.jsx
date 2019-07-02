@@ -20,7 +20,7 @@ class Foundation extends React.Component {
   render() {
     
     return (
-      <div id="foundation-list">
+      <div id="list">
       {
           this.state.foundation.map((foundation) => (
             <div key={foundation.id} id="foundation" onClick={() => {

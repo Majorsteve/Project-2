@@ -20,7 +20,7 @@ class Bronzer extends React.Component {
   render() {
 
     return (
-      <div id="bronzer-list">
+      <div id="list">
         {
           this.state.bronzer.map((bronzer) => (
             <div key={bronzer.id} id="bronzer" onClick={() => {

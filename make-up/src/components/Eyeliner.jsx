@@ -21,7 +21,7 @@ class Eyeliner extends React.Component {
     console.log(this.state.eyeliner);
 
     return (
-      <div id="eyeliner-list">
+      <div id="list">
         {
           this.state.eyeliner.map((eyeliner) => (
             <div key={eyeliner.id} id="eyeliner"onClick={() => {

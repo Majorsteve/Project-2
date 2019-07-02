@@ -19,7 +19,7 @@ class Eyebrow extends React.Component {
 
   render() {
     return (
-      <div id="eyebrow-list">
+      <div id="list">
         {
           this.state.eyebrow.map((eyebrow) => (
             <div key={eyebrow.id} id="eyebrow"onClick={() => {

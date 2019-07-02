@@ -19,7 +19,7 @@ class Lipstick extends React.Component {
 
   render() {
     return (
-      <div id="lipstick-list">
+      <div id="list">
         {
           this.state.lipstick.map((lipstick) => (
             <div key={lipstick.id} id="lipstick" onClick={() => {
