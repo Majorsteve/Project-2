@@ -25,7 +25,7 @@ class Lipstick extends React.Component {
             <div key={lipstick.id} id="lipstick" onClick={() => {
               this.props.setCurrentItem(lipstick);
               this.props.history.push(`/makeupitem/${lipstick.id}`)
-            }}>>
+            }}>
               <img src={lipstick.api_featured_image} />
               <h3>{lipstick.name}</h3>
             </div>

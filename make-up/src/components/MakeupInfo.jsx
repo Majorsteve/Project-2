@@ -8,15 +8,21 @@ class MakeupInfo extends React.Component {
 
   render() {
     return (
-
       this.props.makeUpItem &&
-      <>
+      <div className="Info">
 
         <h3>{this.props.makeUpItem.name}</h3>
-        <img src={this.props.makeUpItem.api_featured_image} />
-        <h3>{this.props.makeUpItem.description}</h3>
-      </>
+        <div id="description">
+          <img src={this.props.makeUpItem.api_featured_image} />
 
+
+          <p><b>Description:</b><br />
+            {this.props.makeUpItem.description}</p>
+        <a href={this.props.makeUpItem.website_link}>Website</a>
+        </div>
+
+
+      </div>
     )
   }
 }

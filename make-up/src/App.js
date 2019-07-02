@@ -60,12 +60,15 @@ class App extends React.Component {
           <Route
             path="/makeupitem/:id"
             render={() => < MakeupInfo makeUpItem={this.state.makeUpItem} />} />
+          <Route
+            path="/"
+            exact render={()=> <Header />}/>
 
         </main>
 
-        <footer>
+        {/* <footer>
           <p>This is the footer</p>
-        </footer>
+        </footer> */}
       </div>
     );
   }

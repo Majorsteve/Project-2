@@ -1,5 +1,12 @@
+body{
+  margin: 0;
+  background-color: whitesmoke;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
 .App {
   text-align: center;
+  background-color: whitesmoke;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 header{
@@ -11,15 +18,15 @@ header{
   height: 170px;
 }
 
-header h1{
+header h1 a{
   color: white;
+  text-decoration: none;
+  
 }
-
-
 
 #list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding:50px;
   list-style: none; 
   width: 1200px;
@@ -60,7 +67,7 @@ main {
  margin-top: 170px;
 }
 
-a{
+.navlink a{
   color: #FFF;
   text-decoration: none;
   margin: 0px 10px;
@@ -73,6 +80,23 @@ a{
 
 }
 
-a:hover{
+.navlink a:hover{
     background: rgb(255, 177, 242,0.7);
+}
+
+.Info h3{
+  font-size: 4em;
+}
+
+#word{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#description{
+  display: flex;
+  /* object-fit: contain; */
+  width: 40em;
+  font-size: 20px;
+  margin-left: 8em;
 }

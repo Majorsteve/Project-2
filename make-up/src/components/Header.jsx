@@ -12,9 +12,11 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <h1>STEPHORA</h1>
+        <h1>
+          <Link to="/">STEPHORA</Link>
+        </h1>
         <nav>
-        <div className="topBotomBordersOut">
+        <div className="navlink">
           <Link to="/blush">Blush </Link>
           <Link to="/lipstick">Lipstick </Link>
           <Link to="/bronzer">Bronzer </Link>
@@ -23,7 +25,7 @@ class Header extends React.Component {
           <Link to="/eyeliner">Eyeliner</Link>
           <Link to="/eyeshadow">Eyeshadow</Link>
           <Link to="/foundation">Foundation</Link>
-            <Link to="/mascara">Mascara</Link>
+          <Link to="/mascara">Mascara</Link>
             </div>
         </nav>
       </header>
