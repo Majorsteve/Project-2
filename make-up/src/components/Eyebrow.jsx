@@ -25,7 +25,7 @@ class Eyebrow extends React.Component {
             <div key={eyebrow.id} id="eyebrow"onClick={() => {
               this.props.setCurrentItem(eyebrow);
               this.props.history.push(`/makeupitem/${eyebrow.id}`)
-            }}>>
+            }}>
               <img src={eyebrow.api_featured_image} />
               <h3>{eyebrow.name}</h3>
             </div>

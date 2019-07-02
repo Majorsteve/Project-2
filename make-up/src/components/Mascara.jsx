@@ -25,7 +25,7 @@ class Mascara extends React.Component{
             <div key={mascara.id} id="mascara" onClick={() => {
               this.props.setCurrentItem(mascara);
               this.props.history.push(`/makeupitem/${mascara.id}`)
-            }}>>
+            }}>
             <img src={mascara.api_featured_image} />
             <h3>{mascara.name}</h3>
           </div>
