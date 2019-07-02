@@ -6,14 +6,21 @@ header{
   position: fixed;
   top: 0;
   text-align: center;
-  background-color: aquamarine;
-
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 170px;
 }
+
+header h1{
+  color: white;
+}
+
+
 
 #list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
-  padding:0;
+  padding:50px;
   list-style: none; 
   width: 1200px;
   max-width: 90%;
@@ -47,4 +54,25 @@ img {
   object-fit: cover;
   width: 300px;
   height: 300px;
+}
+
+main {
+ margin-top: 170px;
+}
+
+a{
+  color: #FFF;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 5px 5px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  font-size: 24px;
+  border: 1px solid white;
+
+}
+
+a:hover{
+    background: rgb(255, 177, 242,0.7);
 }
