@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Home extends React.Component{
+class Home extends React.Component {
   render() {
     return (
 
       <>
-          <h1>Brands List</h1>
-          <div className="list">
-            <ul>
+        <h1>Brands List</h1>
+        <div className="list">
+          <ul>
             <li>alva</li>
             <li>almay</li>
             <li>anna sui</li>
@@ -65,10 +65,10 @@ class Home extends React.Component{
             <li>wet n wild</li>
             <li>zorah</li>
             <li>zorah biocosmetiques</li>
-            </ul> 
+          </ul>
         </div>
-           </> 
-      
+      </>
+
     )
   }
 }

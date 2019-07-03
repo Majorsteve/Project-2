@@ -18,13 +18,11 @@ class Eyeliner extends React.Component {
   }
 
   render() {
-    console.log(this.state.eyeliner);
-
     return (
       <div id="list">
         {
           this.state.eyeliner.map((eyeliner) => (
-            <div key={eyeliner.id} id="eyeliner"onClick={() => {
+            <div key={eyeliner.id} id="eyeliner" onClick={() => {
               this.props.setCurrentItem(eyeliner);
               this.props.history.push(`/makeupitem/${eyeliner.id}`)
             }}>

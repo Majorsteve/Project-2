@@ -1,6 +1,6 @@
 import React from 'react';
 import { fetchBronzer } from '../services/makeup';
-import { withRouter } from 'react-router-dom'; 
+import { withRouter } from 'react-router-dom';
 
 class Bronzer extends React.Component {
   constructor() {

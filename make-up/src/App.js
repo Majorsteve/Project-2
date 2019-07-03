@@ -33,7 +33,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-          <main>
+        <main>
           <Route
             path="/blush"
             render={() => < Blush setCurrentItem={this.setCurrentItem} />} />
@@ -63,15 +63,8 @@ class App extends React.Component {
             render={() => < MakeupInfo makeUpItem={this.state.makeUpItem} />} />
           <Route
             path="/"
-            exact render={() => <Header />} />
-          <Route
-            path="/"
-          exact render={()=> <Home/>}/>
+            exact render={() => <Home />} />
         </main>
-       
-        {/* <footer>
-          <p>This is the footer</p>
-        </footer> */}
       </div>
     );
   }

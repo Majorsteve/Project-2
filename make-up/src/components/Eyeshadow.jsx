@@ -18,7 +18,6 @@ class Eyeshadow extends React.Component {
   }
 
   render() {
-    console.log(this.state.eyeshadow);
 
     return (
       <div id="list">

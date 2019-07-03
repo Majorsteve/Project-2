@@ -2,7 +2,7 @@ import React from 'react';
 import { fetchMascara } from '../services/makeup';
 import { withRouter } from 'react-router-dom';
 
-class Mascara extends React.Component{
+class Mascara extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -26,9 +26,9 @@ class Mascara extends React.Component{
               this.props.setCurrentItem(mascara);
               this.props.history.push(`/makeupitem/${mascara.id}`)
             }}>
-            <img src={mascara.api_featured_image} />
-            <h3>{mascara.name}</h3>
-          </div>
+              <img src={mascara.api_featured_image} />
+              <h3>{mascara.name}</h3>
+            </div>
           ))
         }
       </div>

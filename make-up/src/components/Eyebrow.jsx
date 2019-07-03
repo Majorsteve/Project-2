@@ -22,7 +22,7 @@ class Eyebrow extends React.Component {
       <div id="list">
         {
           this.state.eyebrow.map((eyebrow) => (
-            <div key={eyebrow.id} id="eyebrow"onClick={() => {
+            <div key={eyebrow.id} id="eyebrow" onClick={() => {
               this.props.setCurrentItem(eyebrow);
               this.props.history.push(`/makeupitem/${eyebrow.id}`)
             }}>

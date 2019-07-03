@@ -16,20 +16,19 @@ class Header extends React.Component {
           <Link to="/">STEPHORA</Link>
         </h1>
         <nav>
-        <div className="navlink">
-          <Link to="/blush">Blush </Link>
-          <Link to="/lipstick">Lipstick </Link>
-          <Link to="/bronzer">Bronzer </Link>
-          <Link to="/eyebrow">Eyebrow</Link>
-          {/* <br/> */}
-          <Link to="/eyeliner">Eyeliner</Link>
-          <Link to="/eyeshadow">Eyeshadow</Link>
-          <Link to="/foundation">Foundation</Link>
-          <Link to="/mascara">Mascara</Link>
-            </div>
+          <div className="navlink">
+            <Link to="/blush">Blush </Link>
+            <Link to="/lipstick">Lipstick </Link>
+            <Link to="/bronzer">Bronzer </Link>
+            <Link to="/eyebrow">Eyebrow</Link>
+            <Link to="/eyeliner">Eyeliner</Link>
+            <Link to="/eyeshadow">Eyeshadow</Link>
+            <Link to="/foundation">Foundation</Link>
+            <Link to="/mascara">Mascara</Link>
+          </div>
         </nav>
       </header>
-        
+
     )
   }
 }
