@@ -64,7 +64,7 @@ img {
 }
 
 main {
- margin-top: 170px;
+ margin-top: 220px;
 }
 
 .navlink a{
@@ -86,6 +86,7 @@ main {
 
 .Info h3{
   font-size: 4em;
+  border-bottom: 5px solid black;
 }
 
 #word{
@@ -99,4 +100,23 @@ main {
   width: 40em;
   font-size: 20px;
   margin-left: 8em;
+}
+
+.list{
+  margin: 20px auto;
+  width: 85%;
+  border: 3px solid black
+}
+
+.list ul { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  list-style-type: none;
+  margin-top: 2em;
+
+  /* padding: 0; */
+}
+
+li{
+  margin-top: 2em;
 }

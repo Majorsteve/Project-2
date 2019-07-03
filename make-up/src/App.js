@@ -11,6 +11,7 @@ import Eyeshadow from './components/Eyeshadow';
 import Foundation from './components/Foundation';
 import Mascara from './components/Mascara';
 import MakeupInfo from './components/MakeupInfo';
+import Home from './components/Home'
 
 
 class App extends React.Component {
@@ -32,7 +33,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <main>
+          <main>
           <Route
             path="/blush"
             render={() => < Blush setCurrentItem={this.setCurrentItem} />} />
@@ -62,10 +63,12 @@ class App extends React.Component {
             render={() => < MakeupInfo makeUpItem={this.state.makeUpItem} />} />
           <Route
             path="/"
-            exact render={()=> <Header />}/>
-
+            exact render={() => <Header />} />
+          <Route
+            path="/"
+          exact render={()=> <Home/>}/>
         </main>
-
+       
         {/* <footer>
           <p>This is the footer</p>
         </footer> */}
