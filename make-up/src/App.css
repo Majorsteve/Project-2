@@ -82,7 +82,7 @@ main {
   position: relative;
   z-index: 0;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   border: 1px solid white;
 
 }
@@ -103,9 +103,16 @@ main {
 
 #description{
   display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
   width: 40em;
   font-size: 20px;
-  margin-left: 8em;
+}
+
+#description a{
+  text-decoration: none;
+  color: black;
 }
 
 .list{
@@ -133,12 +140,23 @@ li{
     header{
       width: 100%;
       position: static;
+      padding: 22px 0;
     }
     #list {
       padding: 0;
     }
     .navlink a{
       width: 50%;
+    }
+
+    #description {
+      display: block;
+      width: auto;
+      padding: 20px;
+    }
+
+    main {
+      margin-top: 25px;
     }
 
   }
