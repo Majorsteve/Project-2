@@ -104,7 +104,6 @@ main {
 #description{
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: center;
   width: 40em;
   font-size: 20px;
@@ -113,6 +112,11 @@ main {
 #description a{
   text-decoration: none;
   color: black;
+  font-size: 24px;
+}
+
+#flex{
+  display: block
 }
 
 .list{

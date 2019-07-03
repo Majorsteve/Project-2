@@ -4,7 +4,9 @@
 
 
 ## Project Description
-My project will use the MAKEUP API where users can search for different cosmetics items and can look up information such as brand,different colors, tags such as vegan and non-gmo  
+My project will use the MAKEUP API where users can search for different cosmetics items and can look up information such as brand,different colors, tags such as vegan and non-gmo 
+
+Website link:http://stephora.surge.sh
 
 
 ## Wireframes
@@ -63,9 +65,13 @@ Helper functions should be generic enought that they can be reused in other appl
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+this.state.property.map((property) => (
+            <div key={.id} id=" " onClick={() => {
+              this.props.setCurrentItem(property);
+              this.props.history.push(`/makeupitem/${proptery.id}`)
+            }}>
+            //Being able make each item a onClick to route you to a new page
+
 ```
 
 ## Issues and Resolutions
